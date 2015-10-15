@@ -14,9 +14,9 @@
  */
 float * six(const int *x)
 {
-	float t = *x;
-	float *p = &t;
-	return p;
+    float *p =  (float*)malloc(sizeof(float));
+    *p = (float)*x;
+    return p;
 }
 
 
