@@ -8,7 +8,8 @@
  */
 void eleven()
 {
-	char s[] = "Hello ";
+	char *s = (char*)malloc(7);
+	strcpy(s, "Hello ");
 	strcat(s, "World!");
 	printf("%s\n", s);
 }
